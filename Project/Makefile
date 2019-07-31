@@ -5,7 +5,7 @@ CC=g++
 
 
 CFLAGS= -O0 -g $(INCLUDE_DIRS) $(CDEFS)
-LIBS= -lrt
+LIBS= -lrt siddhant
 CPPLIBS= -L/usr/lib -lopencv_core -lopencv_flann -lopencv_video
 
 HFILES= 
