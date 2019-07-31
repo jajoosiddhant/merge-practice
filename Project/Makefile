@@ -1,4 +1,5 @@
-INCLUDE_DIRS = siddhant
+
+
 LIB_DIRS = 
 CC=g++
 
