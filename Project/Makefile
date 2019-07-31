@@ -1,20 +1,4 @@
 
-
-LIB_DIRS = 
-CC=g++
-
-
-CFLAGS= -O0 -g $(INCLUDE_DIRS) $(CDEFS)
-LIBS= -lrt jajoo
-CPPLIBS= -L/usr/lib -lopencv_core -lopencv_flann -lopencv_video
-
-HFILES= 
-CFILES= 
-CPPFILES= pilot.cpp
-
-SRCS= ${HFILES} ${CFILES}
-CPPOBJS= ${CPPFILES:.cpp=.o}
-
 all:	pilot
 
 clean:
