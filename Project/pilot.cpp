@@ -1,46 +1,5 @@
 int main(int argc, char** argv)
 {
-		
-	Mat test, test1;
-	struct timeval start, stop;
-	
-	//To store the path where frames would be saved.
-	char out[50];	
-	int k = 0;
-	char c = 0;
-	cnt_frame = 0;
-	
-	
-    VideoCapture capture(argv[1]);
-	VideoWriter outputvideo;
-	
-	//capture.open(argv[1]);
-	if(!capture.isOpened())
-	{
-		cout << "Cannot open camera." << endl;
-		help();
-		exit(EXIT_FAILURE);
-	}
-	
-	Size outputsize = Size((int)capture.get(CV_CAP_PROP_FRAME_WIDTH), (int)capture.get(CV_CAP_PROP_FRAME_HEIGHT));
-		
-	outputvideo.open(NAME, CV_FOURCC('M', 'P', '4', 'V'), capture.get(CV_CAP_PROP_FPS), outputsize, true);
-	if(!outputvideo.isOpened())
-	{
-		cout << "Could not open Output video for writer." << endl;
-		exit(EXIT_FAILURE);
-	}
-
-	//Loading the .xml file
-	if( !vehicle_cascade.load(vehicle_cascade_name) )
-    {
-        cout << "Error loading Vehicle cascade\n";
-        exit(EXIT_FAILURE);
-    }
-	
-	//Noting the start of processing time.
-	gettimeofday(&start, NULL);
-
 	Mat src;
 	Mat src_half, src_res, gray;
 	Mat contrast;	
