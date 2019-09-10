@@ -1,5 +1,7 @@
 int main(int argc, char** argv)
 {
+	//Testing git fetch command
+	
 	Mat src;
 	Mat src_half, src_res, gray;
 	Mat contrast;	
